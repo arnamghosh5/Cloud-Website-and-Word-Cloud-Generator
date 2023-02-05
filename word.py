@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from wordcloud import WordCloud, STOPWORDS
 
 #importing Dataset
-df=pd.read_csv(r"Youtube04-Eminem.csv", encoding ="latin-1")
+df=pd.read_csv("Restaurant_Reviews.tsv", sep="    ")
 
 #creating the text variable
 text=" ".join(cat for cat in df.Review)
